@@ -69,6 +69,7 @@ LinkedList.prototype.print = function(){
     console.log(current.data);
     current = current.next;
   }
+  console.log("===================")
 }
 
 
@@ -115,9 +116,11 @@ list.add(3);
 // // Write code to remove duplicates from an unsorted linked list.
 // // FOLLOW UP
 // // How would you solve this problem if a temporary buffer is not allowed?
-// list.add(1);
-// list.remove_duplicates();
-// list.print();
+list.print();
+list.add(1);
+list.print();
+list.remove_duplicates();
+list.print();
 
 // // 2-2
 // // Implement an algorithm to find the kth to last element of a singly linked list.
@@ -134,16 +137,23 @@ list.add(3);
 
 // // 2-4
 // // Write code to partition a linked list around a value x, such that all nodes less than x come before all nodes greater than or equal to x.
-list.add(8);
-list.add(7);
-list.add(6);
-list.add(8);
-list = list.partition(7);
-list.print();
+// list.add(8);
+// list.add(7);
+// list.add(6);
+// list.add(8);
+// list = list.partition(7);
+// list.print();
 
 // // 2-5
 // // You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the Ts digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.
 
+// // 2-6
+// Given a circular linked list, implement an algorithm which returns the node at the beginning of the loop.
+// DEFINITION
+// Circular linked list: A (corrupt) linked list in which a node's next pointer points to an earlier node, so as to make a loop in the linked list.
+// 2.7
+// EXAMPLE
+// Input:A ->B->C->D->E-> C[thesameCasearlier] Output:C
 
 // 2-7
 // Implement a function to check if a linked list is a palindrome.

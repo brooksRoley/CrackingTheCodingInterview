@@ -26,10 +26,11 @@ function permutation(string1, string2){
 }
 
 // Sort the strings and see if they are equal.
+// Note: Have to join the arrays because array comparison checks for memory location and not for value equivalence.
 function permutation(string1, string2){
-  var sort1 = string1.split("").sort();
-  var sort2 = string2.split("").sort();
-  if (sort1 == sort2) {
+  var sort1 = string1.split("").sort().join("");
+  var sort2 = string2.split("").sort().join("");
+  if (sort1 === sort2) {
     return true;
   } else {
     return false;
@@ -37,7 +38,7 @@ function permutation(string1, string2){
 }
 
 
-console.log(permutation("this", "that"));
-console.log(permutation("pizza", "zzpia"));
-console.log(permutation("cat", "tac"));
-console.log(permutation("tic", "tac"));
+console.log(permutation("this", "that") === false);
+console.log(permutation("pizza", "zzpia") === true);
+console.log(permutation("cat", "tac") === true);
+console.log(permutation("tic", "tac") === false);

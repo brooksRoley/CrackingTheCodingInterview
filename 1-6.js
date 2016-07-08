@@ -3,15 +3,15 @@
 function rotateMatrix(matrix){
   var output = [];
   var n = matrix.length
-  for (var i=0; i < n; i++) {
-    output[i] = new Array(4);
-    console.log(output);
-    for (var j=0; j < n; j++) {
-      console.log(output[j]);
-       // output[j][n-i-1] = matrix[i][j];
-     };
-  };
-
+  // // This initial solution takes O(N) memory. Think I can do it better.
+  // for (var i=0; i < n; i++) {
+  //   var temp = [];
+  //   for (var j = n-1; j >= 0; j--) {
+  //     temp.push(matrix[j][i]);
+  //   };
+  //   output.push(temp);
+  // };
+  return output;
 }
 
 
@@ -20,5 +20,11 @@ var arr = [
             [4,5,6],
             [7,8,9]
           ]
+var rotated = [
+                [7,4,1],
+                [8,5,2],
+                [9,6,3]
+              ]
 
-console.log(rotateMatrix(arr));
+// console.log(rotateMatrix(arr) );
+console.log(rotateMatrix(rotated));

@@ -9,7 +9,11 @@ function string_reverse(string){
 }
 
 
+console.log("The reversed string of 'this' is: ");
 string_reverse("this");
+console.log("The reversed string of 'that' is: ");
 string_reverse("that");
+console.log("The reversed string of 'other' is: ");
 string_reverse("other");
+console.log("The reversed string of 'pizza' is: ");
 string_reverse("pizza");

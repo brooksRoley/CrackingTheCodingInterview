@@ -25,8 +25,7 @@ function string_compression(string) {
     }
   };
   string = string.join("");
-  console.log(output);
+  return output;
 }
 
-string_compression("aabcccccaaa");
-console.log("a2blc5a3");
+console.log(string_compression("aabcccccaaa") === "a2b1c5a3");

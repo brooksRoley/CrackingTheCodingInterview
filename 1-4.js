@@ -13,4 +13,4 @@ function string_replace(string){
   return string.join("");
 }
 
-console.log(string_replace("Mr John Smith"));
+console.log(string_replace("Mr John Smith") === "Mr%20John%20Smith");

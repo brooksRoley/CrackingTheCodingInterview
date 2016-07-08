@@ -17,7 +17,7 @@ function has_unique_chars(word) {
   return true;
 }
 
-console.log(has_unique_chars("this"));
-console.log(has_unique_chars("that"));
-console.log(has_unique_chars("otherss"));
-console.log(has_unique_chars("pizza"));
+console.log("'this' has unique characters: " + has_unique_chars("this"));
+console.log("'that' has unique characters: " + has_unique_chars("that"));
+console.log("'otherss' has unique characters: " + has_unique_chars("otherss"));
+console.log("'pizza' has unique characters: " + has_unique_chars("pizza"));
